@@ -1,0 +1,76 @@
+body {
+    background-color: #070a1d;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+}
+.js_clock h1 {
+    -webkit-text-stroke: 1px #070a1d;
+    text-shadow: 1px 2px #070a1d;
+    font-size: 5em;
+}
+
+.js-toDoForm {
+    margin-top: 20px;
+}
+
+.js-toDoForm input {
+    height: 30px;
+    font-size: 1.1em;
+}
+
+.js_form input {
+    height: 30px;
+    font-size: 0.5em;
+}
+
+.form,
+.greeting {
+    display: none;
+}
+
+.showing {
+    display: block;
+    font-size: 2em;
+    text-shadow: 1px 2px #070a1d;
+
+}
+
+.js-toDoList {
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 10px;
+}
+
+.css-li {
+    font-size: 1.1em;
+    /* -webkit-text-stroke: 0.3px #0f3735;
+    text-shadow: 1px 1px #0f3735; */
+    color: #070a1d;
+    list-style-type: none;
+    margin: 5px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  /*비율 맞춰 변동하게 하려면 auto 사용*/
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
